@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#9DC183</color> <!-- hijau sage -->
+    <color name="colorPrimaryDark">#7FA46C</color> <!-- versi lebih gelap -->
+    <color name="colorAccent">#A3C9A8</color> <!-- opsional, warna aksen -->
+</resources>

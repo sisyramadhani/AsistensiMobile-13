@@ -1,0 +1,174 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #F0F8FF; /* Alice Blue */
+    margin: 0;
+    padding: 20px; /* Ruang di sekitar konten */
+}
+
+/* (mobile) */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+/* (desktop) */
+@media (min-width: 769px) {
+    .container {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+/* JUDUL START */
+.model {
+    background-color: #E6E6FA; /* Light Cyan */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek kedalaman */
+    width: 400px;
+    height: auto;
+    margin: auto;
+    padding: 10px; /* Tambahkan padding untuk ruang di dalam */
+    display: flex;
+    flex-direction: column; /* Mengatur arah flex menjadi kolom */
+    align-items: center; /* Mengatur item agar berada di tengah */
+}
+
+/* JUDUL END */
+h3 {
+    margin: 0; /* Hapus margin untuk menyesuaikan dengan padding */
+    padding-bottom: 10px; /* Tambahkan padding bawah */
+    color: #333; /* Warna teks */
+}
+
+/* TOMBOL START */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #B2E0E0;
+    transition: .4s;
+    border-radius: 34px;
+    box-shadow: 1px 1px 31px rgba(0, 0, 0, 0.2);
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #ffffff;
+    transition: .4s;
+    border-radius: 50%;
+    box-shadow: 1px 1px 31px rgba(0, 0, 0, 0.2);
+}
+
+input:checked + .slider {
+    background-color: #0073A8;
+    box-shadow: 1px 1px 31px rgba(33, 150, 243, 0.75);
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.posisi-status {
+    margin-top: 10px; /* Ubah margin untuk penempatan yang lebih baik */
+    color: #555; /* Warna teks */
+}
+
+/* TOMBOL END */
+/* INPUT-FORM START */
+form {
+    width: 100%; /* Memastikan form mengambil lebar penuh dari kontainer */
+    display: flex;
+    flex-direction: column; /* Mengatur form agar kolom */
+    align-items: center; /* Mengatur item agar berada di tengah */
+}
+
+.form-model {
+    width: 100%; /* Memastikan model mengambil lebar penuh */
+    margin-bottom: 10px; /* Ruang bawah untuk pemisah */
+}
+
+.size {
+    width: 100%; /* Ubah menjadi 100% agar responsif */
+    max-width: 362px; /* Maksimal lebar */
+    height: 30px; /* Tinggi input */
+    padding: 5px; /* Ruang dalam */
+    border: 1px solid #ccc; /* Garis batas */
+    border-radius: 5px; /* Sudut melengkung */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan input */
+}
+
+/* INPUT-FORM END */
+
+/* CHOOSE-FORM START */
+.gerak {
+    width: 100%;
+    text-align: left; /* Mengatur teks ke kiri */
+}
+
+.posisi {
+    padding-left: 0; /* Menghapus padding kiri */
+    color: #333; /* Warna teks */
+}
+
+li {
+    list-style-type: none;
+}
+
+/* CHOOSE-FORM END */
+
+/* AGREE START */
+.btn-setuju {
+    margin: 10px 0; /* Ubah margin untuk penempatan yang lebih baik */
+}
+
+/* AGREE END */
+
+/* BTN DAFTAR START */
+#daftar-posisi {
+    margin-top: 20px; /* Tambahkan margin atas untuk jarak */
+    padding: 5px 10px; /* Ruang dalam tombol */
+    background-color: #007BFF;
+    color: white; /* Warna teks tombol */
+    border: none;
+    border-radius: 5px; /* Sudut melengkung tombol */
+    cursor: pointer; /* Tangan pointer pada hover */
+    box-shadow: 1px 2px 45px 22px rgba(17,68,68,0.75);
+-webkit-box-shadow: 1px 2px 45px 22px rgba(17,68,68,0.75);
+-moz-box-shadow: 1px 2px 45px 22px rgba(17,68,68,0.75); /* Bayangan tombol */
+    transition: background-color 0.3s; /* Transisi warna */
+}
+
+#daftar-posisi:hover {
+    background-color: #77b8fd;
+}
+
+/* BTN DAFTAR END */
+
+/* ERROR MESSAGE */
+.error-message {
+    color: red;
+    margin-top: 5px; /* Ruang atas untuk pesan kesalahan */
+}
